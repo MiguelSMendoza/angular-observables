@@ -16,6 +16,12 @@ export class UserComponent implements OnInit {
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
+        },
+        () => {
+          console.log('ERROR');
+        },
+        () => {
+          console.log('COMPLETE');
         }
       );
   }
