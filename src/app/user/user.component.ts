@@ -31,7 +31,6 @@ export class UserComponent implements OnInit, OnDestroy {
 
   public onActivate(): void {
     this.usersService.userActivated.next(this.id);
-    console.log('penecoonespolla'.match(/pene(.*)polla/));
   }
 
   ngOnDestroy() {
